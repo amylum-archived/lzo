@@ -9,7 +9,8 @@ source(
 )
 
 configure_flags(
-  prefix: '/usr'
+  prefix: '/usr',
+  'enable-shared': nil
 )
 
 harden
