@@ -1,0 +1,33 @@
+Prospectus.extra_dep('file', 'pkgforge')
+
+item do
+  expected do
+    url_xpath
+    url 'http://www.oberhumer.com/opensource/lzo/'
+    xpath '//*[@id="www-oberhumer-com"]/div/div[2]/div/div[2]/table/tr/td[1]/div/p[1]/font'
+    regex /^Version ([.\d]+)/
+  end
+
+  actual do
+    git_tag
+    regex /^(.*)-\d+$/
+  end
+
+  deps do
+    PkgForge.load_from_file.deps.each do |dep_name, current_version|
+      item do
+        name dep_name
+
+        expected do
+          github_release
+          repo "amylum/#{dep_name}"
+        end
+
+        actual do
+          static
+          set current_version
+        end
+      end
+    end
+  end
+end

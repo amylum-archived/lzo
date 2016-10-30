@@ -1,0 +1,25 @@
+name 'lzo'
+org 'amylum'
+
+licenses 'COPYING'
+
+source(
+  type: 'tar',
+  url: "http://www.oberhumer.com/opensource/lzo/download/lzo-2.09.tar.gz"
+)
+
+configure_flags(
+  prefix: '/usr'
+)
+
+harden
+
+build do
+  configure
+  make
+  install
+end
+
+test do
+  # TODO: add tests
+end
