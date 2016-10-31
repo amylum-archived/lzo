@@ -4,8 +4,8 @@ item do
   expected do
     url_xpath
     url 'http://www.oberhumer.com/opensource/lzo/'
-    xpath '//*[@id="www-oberhumer-com"]/div/div[2]/div/div[2]/table/tr/td[1]/div/p[1]/font'
-    regex /^Version ([.\d]+)/
+    xpath '//table[@class="main_table"]/tr[1]/td[1]/div[1]/p[1]'
+    regex /^Version ([.\d]+)$/
   end
 
   actual do
