@@ -5,7 +5,7 @@ licenses 'COPYING'
 
 source(
   type: 'tar',
-  url: "http://www.oberhumer.com/opensource/lzo/download/lzo-2.09.tar.gz"
+  url: "http://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz"
 )
 
 configure_flags(
