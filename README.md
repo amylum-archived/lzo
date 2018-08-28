@@ -1,7 +1,7 @@
 lzo
 ==========
 
-[![Build Status](https://img.shields.io/circleci/project/amylum/lzo/master.svg)](https://circleci.com/gh/amylum/lzo)
+[![Build Status](https://img.shields.io/travis/com/amylum/lzo.svg)](https://travis-ci.com/amylum/lzo)
 [![GitHub release](https://img.shields.io/github/release/amylum/lzo.svg)](https://github.com/amylum/lzo/releases)
 [![GPL Licensed](http://img.shields.io/badge/license-GPL2+-green.svg)](https://tldrlegal.com/license/gnu-general-public-license-v2)
 
